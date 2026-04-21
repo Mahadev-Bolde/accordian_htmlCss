@@ -1,0 +1,27 @@
+#Accordians 
+
+##Tasks - 
+
+Tags - 
+1. Button
+2. Div
+3. Icon
+
+Questions
+1.what is Html?
+==>html stands for hyper text markup language.
+2.what is css?
+==> css stands for cascading style sheet.
+3.what is js?
+==> js is scripting language.
+
+
+
+functionality - 
+1. questions
+2. answers
+3. firstly question visible but answer hidden
+4. onclick on button the accordian expand and show answer with css only for now.
+5. add icon 
+6. first normal icon and on open icon should rotate 90deg
+
