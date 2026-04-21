@@ -19,7 +19,7 @@ body {
 .container {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to right bottom, rgb(35, 194, 141), rgba(35, 194, 141, 0.153) 70%);
+    background: linear-gradient(to right bottom, rgb(78, 187, 5), rgba(57, 189, 5, 0.1), rgba(28, 119, 184, 0.475),rgb(18, 148, 184), rgb(198, 41, 154), rgb(253, 75, 134), rgb(118, 26, 179),rgb(47, 123, 189), rgb(15, 90, 156),rgb(9, 192, 21), rgb(53, 205, 33));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,11 +29,28 @@ body {
 
 .accordian {
     width: 50%;
-    background-color: white;
     border-radius: 20px;
+    padding: 3px;
+
+    background: linear-gradient(-5deg,
+        rgb(99, 99, 99),
+        rgba(255, 255, 255, 0.9),
+        rgba(230, 230, 230, 0.9),
+        rgb(255, 255, 255),
+        rgb(141, 141, 141),
+        rgb(151, 151, 151),
+        rgba(210, 210, 210, 0.9)
+    );
+
     box-shadow: 4px 1px 10px rgba(0, 0, 0, 0.546);
-    cursor: pointer;
     overflow: hidden;
+}
+
+/* inner content wrapper effect */
+.accordian > div {
+    background: white;
+    border-radius: 17px;
+    cursor: pointer;
 }
 
 /* hide checkbox */
@@ -42,7 +59,7 @@ body {
     width: 100%;
     position: absolute;
     opacity: 0;
-    background-color:rgba(255, 255, 255, 0);
+    background-color:white;
     /* display: none; */
 }
 
@@ -52,18 +69,24 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    cursor: pointer;
+    background-color:white;
+    border-radius: 20px;
 }
 
 .question label {
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
+    background-color:white;
 }
 
 /* ICON */
 .question i {
     font-size: 24px;
     transition: 0.3s;
+    background-color:white;
+
 }
 
 /* ANSWER */
@@ -72,12 +95,20 @@ body {
     overflow: hidden;
     padding: 0 20px;
     transition: 0.3s ease;
+    background-color:white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 /* OPEN STATE */
 .accordian input:checked ~ .answer {
     max-height: 200px;
     padding: 10px 20px 20px;
+}
+.accordian input:checked ~ .question {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 
